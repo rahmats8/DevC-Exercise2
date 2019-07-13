@@ -2,10 +2,105 @@
 <html lang="en">
 <head>
     <title>Exercise 2</title>
+    
+    
+    <script>
+
+        function tambah (val1,val2) {
+            var hasil;
+            hasil = parseInt(val1) + parseInt(val2);
+            document.getElementById("hasil").innerHTML = hasil; 
+        }
+
+
+        function kurang (val1,val2) {
+            hasil = parseInt(val1) - parseInt(val2);
+            document.getElementById("hasil").innerHTML = hasil;
+        
+        }
+
+        function kali (val1,val2) {
+            hasil = parseInt(val1) * parseInt(val2);
+            document.getElementById("hasil").innerHTML = hasil;
+        
+        }
+
+        function bagi (val1,val2) {
+            hasil = parseInt(val1) / parseInt(val2);
+            document.getElementById("hasil").innerHTML = hasil;
+        
+        }
+        
+            
+    </script>
+
+    <style>
+        .container {
+            padding: 30px;
+            width: 350px;
+            margin: auto;
+            background-color: salmon;
+            box-sizing: border-box;
+        }
+
+        div {
+            text-align: center;
+            padding: 20px;
+        }
+
+        label{
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            padding: 3px;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 20%;
+        }
+
+    </style>
+
+
+    
 </head>
 <body>
     <center>
         <h1>Kalkulator</h1>
     </center>
+    
+    
+
+    <div class="container">
+    <div>
+
+        <h1>Kalkulator</h1>
+        <label for="#">Nilai 1</label>
+        <input type="text"  id="bilangan1" name="Nilai1"/>
+        
+        <label for="#">Nilai 1</label>
+        <input type="text"  id="bilangan2" nama="Nilai2"/>
+
+        <h2 id="hasil" >0</h2>
+
+        <button onclick= tambah(bilangan1.value,bilangan2.value)>
+            Tambah </button>
+
+        <button onclick= kurang(bilangan1.value,bilangan2.value)>
+            Kurang </button>
+        
+        <button onclick= kali(bilangan1.value,bilangan2.value)>
+            Kali </button>
+            
+        <button onclick= bagi(bilangan1.value,bilangan2.value)>
+            Bagi </button>
+        
+    </div>
+</div>
+
+    
 </body>
 </html>
